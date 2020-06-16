@@ -5,6 +5,8 @@ import (
 	"encoding/binary"
 )
 
+type Hash256 []byte
+
 func DoubleSha256(data []byte) []byte {
 	hash := sha256.New()
 	hash.Write(data)
@@ -30,4 +32,15 @@ func Varint(n uint64) []byte {
 	} else {
 		return []byte{byte(n)}
 	}
+}
+func MerkleParent(hash1, hash2 []byte) []byte {
+	return Hash256(append(hash1, hash2...))
+}
+
+func ReverseByteArray(arr []byte) []byte {
+	length := len(arr)
+	for i := 0; i < length/2; i++ {
+		arr[i], arr[length-i-1] = arr[length-i-1], arr[i]
+	}
+	return arr
 }

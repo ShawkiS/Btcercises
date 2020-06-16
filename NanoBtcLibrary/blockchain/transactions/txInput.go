@@ -11,7 +11,7 @@ var SequenceDefaultVal = "0xffffffff"
 type TxInput struct {
 	Hash          []byte
 	Index         uint32
-	PrevIndex     uint32
+	PrevIndex     int
 	PrevTx        Transaction
 	Script        Script
 	Sequence      uint32

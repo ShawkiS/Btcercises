@@ -3,6 +3,7 @@ package transactions
 import (
 	"encoding/binary"
 	"fmt"
+	"strings"
 
 	"github.com/Btcercises/NanoBtcLibrary/blockchain/utils"
 )
@@ -58,6 +59,35 @@ func GenerateTransactionId(tx Transaction) []byte {
 
 	tx.Id = utils.DoubleSha256(bin)
 	return tx.Id
+}
+
+func IsCoinbaseTx(tx Transaction) bool {
+	if len(tx.Input) != 1 {
+		return false
+	}
+
+	firstInput := tx.Input[0]
+
+	if string(firstInput.PrevTx.Id) != strings.Repeat("00", 32) {
+		return false
+	}
+
+	if firstInput.PrevIndex != -1 {
+		return false
+	}
+
+	return true
+}
+
+func CreateCoinbaseTransaction(tx Transaction) {
+	isCoinbaseTx := IsCoinbaseTx(tx)
+
+	if !isCoinbaseTx {
+		panic("Duplicated Coinbase Transaction")
+	}
+
+	// element = tx.Input[0].script_sig.cmds[0]
+	// return little_endian_to_int(element)
 }
 
 func GetUrl(testnet bool) string {
