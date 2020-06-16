@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Btcercises/NanoBtcLibrary/network/util"
+	"github.com/Btcercises/NanoBtcLibrary/Go/network/util"
 )
 
 var (

@@ -3,7 +3,7 @@ package crypto
 import (
 	"math/big"
 
-	"github.com/Btcercises/NanoBtcLibrary/math"
+	"github.com/Btcercises/NanoBtcLibrary/Go/math"
 )
 
 type S256Field struct {

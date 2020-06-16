@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Btcercises/NanoBtcLibrary/blockchain/utils"
+	"github.com/Btcercises/NanoBtcLibrary/Go/blockchain/utils"
 )
 
 type Transaction struct {

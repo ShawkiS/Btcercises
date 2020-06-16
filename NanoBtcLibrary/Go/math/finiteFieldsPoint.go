@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/Btcercises/NanoBtcLibrary/math/utils"
+	"github.com/Btcercises/NanoBtcLibrary/Go/math/utils"
 )
 
 var A = big.NewInt(0)

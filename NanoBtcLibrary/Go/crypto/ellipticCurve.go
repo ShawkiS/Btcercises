@@ -3,8 +3,8 @@ package crypto
 import (
 	"math/big"
 
-	"github.com/Btcercises/NanoBtcLibrary/math"
-	"github.com/Btcercises/NanoBtcLibrary/math/utils"
+	"github.com/Btcercises/NanoBtcLibrary/Go/math"
+	"github.com/Btcercises/NanoBtcLibrary/Go/math/utils"
 )
 
 var prime = utils.GeneratePrimeValue()

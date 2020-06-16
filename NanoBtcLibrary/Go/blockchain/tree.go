@@ -6,7 +6,7 @@ import (
 	"math"
 	"strings"
 
-	utils "github.com/Btcercises/NanoBtcLibrary/blockchain/utils"
+	utils "github.com/Btcercises/NanoBtcLibrary/Go/blockchain/utils"
 )
 
 // Tree represents a merkle tree.

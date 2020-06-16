@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	util "github.com/Btcercises/NanoBtcLibrary/network/util"
+	util "github.com/Btcercises/NanoBtcLibrary/Go/network/util"
 )
 
 type VersionMessage struct {

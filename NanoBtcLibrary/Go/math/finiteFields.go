@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math/big"
 
-	utils "github.com/Btcercises/NanoBtcLibrary/math/utils"
+	utils "github.com/Btcercises/NanoBtcLibrary/Go/math/utils"
 )
 
 var prime = utils.GeneratePrimeValue()

@@ -4,8 +4,8 @@ import (
 	"crypto/rand"
 	"math/big"
 
-	btcMath "github.com/Btcercises/NanoBtcLibrary/math"
-	"github.com/Btcercises/NanoBtcLibrary/math/utils"
+	btcMath "github.com/Btcercises/NanoBtcLibrary/Go/math"
+	"github.com/Btcercises/NanoBtcLibrary/Go/math/utils"
 )
 
 var G = gValue()

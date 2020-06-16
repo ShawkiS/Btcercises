@@ -7,8 +7,8 @@ import (
 	"math"
 	"math/big"
 
-	blockchain "github.com/Btcercises/NanoBtcLibrary/blockchain"
-	utils "github.com/Btcercises/NanoBtcLibrary/consensus/utils"
+	blockchain "github.com/Btcercises/NanoBtcLibrary/Go/blockchain"
+	utils "github.com/Btcercises/NanoBtcLibrary/Go/consensus/utils"
 )
 
 const Difficulty = 1

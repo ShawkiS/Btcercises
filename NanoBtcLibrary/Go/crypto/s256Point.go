@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"math/big"
 
-	btcMath "github.com/Btcercises/NanoBtcLibrary/math"
-	"github.com/Btcercises/NanoBtcLibrary/math/utils"
+	btcMath "github.com/Btcercises/NanoBtcLibrary/Go/math"
+	"github.com/Btcercises/NanoBtcLibrary/Go/math/utils"
 
-	cryptoUtils "github.com/Btcercises/NanoBtcLibrary/crypto/utils"
-	"github.com/Btcercises/NanoBtcLibrary/math"
+	cryptoUtils "github.com/Btcercises/NanoBtcLibrary/Go/crypto/utils"
+	"github.com/Btcercises/NanoBtcLibrary/Go/math"
 	base58 "github.com/btcsuite/btcutil/base58"
 )
 

@@ -1,12 +1,12 @@
 package blockchain
 
 import (
-	"bytes"
 	"encoding/binary"
+	"strconv"
 	"time"
 
-	transactions "github.com/Btcercises/NanoBtcLibrary/blockchain/transactions"
-	utils "github.com/Btcercises/NanoBtcLibrary/blockchain/utils"
+	transactions "github.com/Btcercises/NanoBtcLibrary/Go/blockchain/transactions"
+	utils "github.com/Btcercises/NanoBtcLibrary/Go/blockchain/utils"
 )
 
 type Hash256 []byte
@@ -19,7 +19,7 @@ type BlockHeader struct {
 	HashMerkle       Hash256
 	Timestamp        time.Time
 	TargetDifficulty uint32
-	Nonce            []byte
+	Nonce            int
 	MerkleRoot       [32]byte
 }
 
@@ -48,7 +48,7 @@ func NewBlock(version int,
 	}
 	copy(result.HashPrev[:32], prevBlock)
 	copy(result.MerkleRoot[:32], merkleRoot)
-	copy(result.Nonce[:4], nonce)
+	copy([]byte(strconv.Itoa(result.Nonce)[:4]), nonce)
 	return result
 }
 
@@ -80,17 +80,4 @@ func (blockHeader *BlockHeader) HashBlock() Hash256 {
 
 	blockHeader.Hash = utils.DoubleSha256(bin)
 	return blockHeader.Hash
-}
-
-func (block *Block) IsValid() bool {
-	flagBits := util.BytesToBitField(block.Flags)
-	hashes := make([][]byte, len(block.Hashes))
-	for i, hash := range block.Hashes {
-		hashes[i] = make([]byte, len(hash))
-		copy(hashes[i], hash)
-		util.ReverseByteArray(hashes[i])
-	}
-	tree := NewTree(int(block.Total))
-	tree.PopulateTree(flagBits, hashes)
-	return bytes.Equal(util.ReverseByteArray(tree.Root()), block.MerkleRoot[:])
 }

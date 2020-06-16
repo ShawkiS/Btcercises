@@ -3,7 +3,7 @@ package messaging
 import (
 	"bytes"
 
-	"github.com/Btcercises/NanoBtcLibrary/network/util"
+	"github.com/Btcercises/NanoBtcLibrary/Go/network/util"
 )
 
 type GetHeadersMessage struct {

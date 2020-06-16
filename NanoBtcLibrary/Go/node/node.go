@@ -9,8 +9,8 @@ import (
 	"os"
 	"reflect"
 
-	rpc "github.com/Btcercises/NanoBtcLibrary/network/rpc"
-	"github.com/Btcercises/NanoBtcLibrary/network/util"
+	rpc "github.com/Btcercises/NanoBtcLibrary/Go/network/rpc"
+	"github.com/Btcercises/NanoBtcLibrary/Go/network/util"
 )
 
 type Node struct {

@@ -1,8 +1,8 @@
 package transactions
 
 import (
-	cryptoUtils "github.com/Btcercises/NanoBtcLibrary/crypto/utils"
-	utils "github.com/Btcercises/NanoBtcLibrary/utils"
+	cryptoUtils "github.com/Btcercises/NanoBtcLibrary/Go/crypto/utils"
+	utils "github.com/Btcercises/NanoBtcLibrary/Go/utils"
 )
 
 var OP_CODE_FUNCTIONS = []OP_CODE_FUNCTION{{118, "Op_dup", "0x76"}, {169, "Op_hash160", "0xa9"}}

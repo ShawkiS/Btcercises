@@ -3,7 +3,7 @@ package transactions
 import (
 	"encoding/binary"
 
-	"github.com/Btcercises/NanoBtcLibrary/blockchain/utils"
+	"github.com/Btcercises/NanoBtcLibrary/Go/blockchain/utils"
 )
 
 type TxOutput struct {
