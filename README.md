@@ -3,7 +3,7 @@ Writting some Bitcoin
 
 * **NanoBtcLibrary**:  
 Go:
-Wrote some Bitcoin functions in golang while while having a fast read for `Programming Bitcoin: Learn How to Program Bitcoin from Scratch (O'Reilly Media; 1 edition (March 5, 2019)`!  
+Wrote some Bitcoin functions in golang while while having a fast read for `Programming Bitcoin: Learn How to Program Bitcoin from Scratch (O'Reilly Media; 1 edition (March 5, 2019)`!  <br>
 Python: 
 Trying to focus more on the `Programming Bitcoin: Learn How to Program Bitcoin from Scratch (O'Reilly Media; 1 edition (March 5, 2019)` book while having my second read for it!  
 
