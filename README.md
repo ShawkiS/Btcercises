@@ -14,4 +14,4 @@ An implementation of Lamport signatures which are quantum robust using Golang!
 Simple Proof of Work that mines my name too :)  
 
 * **GoCatena**:
-an efficiently-verifiable Bitcoin witnessing scheme. Catena enables any number of thin clients, such as mobile phones, to efficiently agree on a log of applicationspecific statements managed by an adversarial server, the paper can be found [here!](https://people.csail.mit.edu/devadas/pubs/catena.pdf).
+an efficiently-verifiable Bitcoin witnessing scheme. Catena enables any number of thin clients, such as mobile phones, to efficiently agree on a log of applicationspecific statements managed by an adversarial server, the paper can be found [here!](https://people.csail.mit.edu/devadas/pubs/catena.pdf)
