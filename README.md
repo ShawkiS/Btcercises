@@ -15,3 +15,6 @@ Simple Proof of Work that mines my name too :)
 
 * **GoCatena**:
 an efficiently-verifiable Bitcoin witnessing scheme. Catena enables any number of thin clients, such as mobile phones, to efficiently agree on a log of applicationspecific statements managed by an adversarial server, the paper can be found [here!](https://people.csail.mit.edu/devadas/pubs/catena.pdf)
+
+* **PBKDF2**:  
+An implementaion for Password-Based Key Derivation Function which is used in HD wallets  
