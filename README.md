@@ -18,3 +18,6 @@ an efficiently-verifiable Bitcoin witnessing scheme. Catena enables any number o
 
 * **PBKDF2**:  
 An implementaion for Password-Based Key Derivation Function which is used in HD wallets  
+
+* **Schnorr**:  
+standard 64-byte Schnorr signature scheme over the elliptic curve secp256k1 using Go 
